@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Beertopia - Checkout</title>
+    <!-- Bootstrap -->
+	  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	  <link rel="stylesheet" href="css/style.css">
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+	  <link href="https://fonts.googleapis.com/css2?family=Girassol&display=swap" rel="stylesheet">
+	  <link href="css/checkout.css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-secondary p-3"> <a class="navbar-brand text-white" href="index.html">Beertopia&nbsp;</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1"> <span class="navbar-toggler-icon"></span> </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active"> <a class="nav-link text-white" href="index.html">Home <span class="sr-only">(current)</span></a> </li>
+            <li class="nav-item"> </li>
+            <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown"> Shop&nbsp; </a>
+              <div class="dropdown-menu bg-secondary text-white">
+			          <a class="dropdown-item text-white" href="catalog.html#">All Products</a> 
+		   	        <a class="dropdown-item text-white" href="catalog.html#IPA">IPA</a>
+			          <a class="dropdown-item text-white" href="catalog.html#Lagers">American Style Lagers</a>
+			          <a class="dropdown-item text-white" href="catalog.html#Stouts">Stouts</a>
+			        </div>
+            </li>
+            <li class="nav-item"> <a class="nav-link text-white" href="about.html">About Us</a> </li>
+          </ul>
+          <div class="my-2 my-lg-0">
+            <a class="btn text-white" href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="container">
+	    <h1 class="text-center">Checkout</h1>
+	    <form action="checkout.html" method="POST">
+		    <div>
+			    <h2>Delivery and Billing Address</h2>
+		      <label for="name">Your Name</label>
+		      <input id="name" type="text" required>
+		      <label for="number">Phone Number</label>
+		      <input id="number" type="tel" required>
+		      <label for="email">Email Address</label>
+		      <input id="email" type="email" required>
+		      <label for="streetaddress">Delivery Address (street)</label>
+		      <input id="streetaddress" type="text" required>
+		      <label for="city">City</label>
+		      <input id="city" type="text" required>
+		      <label for="state">State</label>
+  		    <select id="state" name="state" required>
+		        <option value="" selected>Select A State</option>
+    	      <option value="Alabama">Alabama</option>
+            <option value="Alaska">Alaska</option>
+            <option value="Arizona">Arizona</option>
+            <option value="Arkansas">Arkansas</option>
+            <option value="California">California</option>
+            <option value="Colorado">Colorado</option>
+            <option value="Connecticut">Connecticut</option>
+            <option value="Delaware">Delaware</option>
+            <option value="Florida">Florida</option>
+            <option value="Georgia">Georgia</option>
+            <option value="Hawaii">Hawaii</option>
+            <option value="Idaho">Idaho</option>
+            <option value="Illinois">Illinois</option>
+            <option value="Indiana">Indiana</option>
+            <option value="Iowa">Iowa</option>
+            <option value="Kansas">Kansas</option>
+            <option value="Kentucky">Kentucky</option>
+            <option value="Louisiana">Louisiana</option>
+            <option value="Maine">Maine</option>
+            <option value="Maryland">Maryland</option>
+            <option value="Massachusetts">Massachusetts</option>
+            <option value="Michigan">Michigan</option>
+            <option value="Minnesota">Minnesota</option>
+            <option value="Mississippi">Mississippi</option>
+            <option value="Missouri">Missouri</option>
+            <option value="Montana">Montana</option>
+            <option value="Nebraska">Nebraska</option>
+            <option value="Nevada">Nevada</option>
+            <option value="New Hampshire">New Hampshire</option>
+            <option value="New Jersey">New Jersey</option>
+            <option value="New Mexico">New Mexico</option>
+            <option value="New York">New York</option>
+            <option value="North Carolina">North Carolina</option>
+            <option value="North Dakota">North Dakota</option>
+            <option value="Ohio">Ohio</option>
+            <option value="Oklahoma">Oklahoma</option>
+            <option value="Oregon">Oregon</option>
+            <option value="Pennsylvania">Pennsylvania</option>
+            <option value="Rhode Island">Rhode Island</option>
+            <option value="South Carolina">South Carolina</option>
+            <option value="South Dakota">South Dakota</option>
+            <option value="Tennessee">Tennessee</option>
+            <option value="Texas">Texas</option>
+            <option value="Utah">Utah</option>
+            <option value="Vermont">Vermont</option>
+            <option value="Virginia">Virginia</option>
+            <option value="Washington">Washington</option>
+            <option value="West Virginia">West Virginia</option>
+            <option value="Wisconsin">Wisconsin</option>
+            <option value="Wyoming">Wyoming</option>
+  		    </select>
+		      <label for="zip">Zip Code</label>
+		      <input id="zip" type="text" pattern="[0-9 \*]*" size="5" required>
+		    </div>
+		    <div class="mt-5">
+			    <h2>Credit or Debit Card</h2>
+			    <label for="card">Card Number</label>
+			    <input id="card" type="text" pattern="[0-9 \*]*" autocomplete="off" required>
+			    <label for="cvv">Security Code</label>
+			    <input id="cvv" type="text" pattern="[0-9 \*]*" size="4" autocomplete="off" required>
+			    <label for="month">Expires On</label>
+			    <select id="month" name="month" required>
+            <option value="">Month</option>
+            <option value="1">1</option>
+				    <option value="2">2</option>
+				    <option value="3">3</option>
+				    <option value="4">4</option>
+				    <option value="5">5</option>
+				    <option value="6">6</option>
+				    <option value="7">7</option>
+				    <option value="8">8</option>
+				    <option value="9">9</option>
+				    <option value="10">10</option>
+				    <option value="11">11</option>
+				    <option value="12">12</option>
+			    </select>
+			    <select id="year" name="year" required>
+            <option value="">Year</option>
+            <option value="2020">2020</option>
+				    <option value="2021">2021</option>
+				    <option value="2022">2022</option>
+				    <option value="2023">2023</option>
+				    <option value="2024">2024</option>
+				    <option value="2025">2025</option>
+				    <option value="2026">2026</option>
+				    <option value="2027">2027</option>
+				    <option value="2028">2028</option>
+				    <option value="2029">2029</option>
+				    <option value="2030">2030</option>
+				    <option value="2031">2031</option>
+				    <option value="2032">2032</option>
+				    <option value="2033">2033</option>
+				    <option value="2034">2034</option>
+				    <option value="2035">2035</option>
+			    </select>
+		    </div>
+		    <div class="mt-5">
+			    <h2>Order Summary</h2>
+			    <div class="table-responsive">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col" class="border-0 bg-light">
+                    <div class="p-2 px-3 text-uppercase">Product</div>
+                  </th>
+                  <th scope="col" class="border-0 bg-light">
+                    <div class="py-2 text-uppercase">Price</div>
+                  </th>
+                  <th scope="col" class="border-0 bg-light">
+                    <div class="py-2 text-uppercase">Quantity</div>
+                  </th>
+                  <th scope="col" class="border-0 bg-light">
+                    <div class="py-2 text-uppercase">Remove</div>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row" class="border-0">
+                    <div class="p-2">
+                      <img src="img/BloodOrangeIPA.jpg" alt="" width="70" class="img-fluid rounded shadow-sm">
+                      <div class="ml-3 d-inline-block align-middle">
+                        <p class="mb-0"> <a href="#" class="text-dark d-inline-block align-middle">Flagship Brewery Blood Orange IPA</a></p><span class="text-muted font-weight-normal font-italic d-block">Category: IPA</span>
+                      </div>
+                    </div>
+                  </th>
+                  <td class="border-0 align-middle"><strong>$103.92‬</strong></td>
+                  <td class="border-0 align-middle"><strong>8</strong></td>
+                  <td class="border-0 align-middle"><a href="#" class="text-dark"><i class="fa fa-trash"></i></a></td>
+                </tr>
+                <tr>
+                  <th scope="row">
+                    <div class="p-2">
+                      <img src="img/GooseIslandIPA.jpg" alt="" width="70" class="img-fluid rounded shadow-sm">
+                      <div class="ml-3 d-inline-block align-middle">
+                        <p class="mb-0"><a href="#" class="text-dark d-inline-block">Goose Island IPA</a></p><span class="text-muted font-weight-normal font-italic">Category: IPA</span>
+                      </div>
+                    </div>
+                  </th>
+                  <td class="align-middle"><strong>$23.98‬</strong></td>
+                  <td class="align-middle"><strong>2</strong></td>
+                  <td class="align-middle"><a href="#" class="text-dark"><i class="fa fa-trash"></i></a></td>
+                </tr>
+                <tr>
+                  <th scope="row">
+                    <div class="p-2">
+                      <img src="img/Guinness.jpg" alt="" width="70" class="img-fluid rounded shadow-sm">
+                      <div class="ml-3 d-inline-block align-middle">
+                        <p class="mb-0"> <a href="#" class="text-dark d-inline-block">Guinness Draught</a></p><span class="text-muted font-weight-normal font-italic">Category: Stout</span>
+                      </div>
+                    </div>
+                  </th>
+                  <td class="align-middle"><strong>$11.99</strong></td>
+                  <td class="align-middle"><strong>1</strong></td>
+                  <td class="align-middle"><a href="#" class="text-dark"><i class="fa fa-trash"></i></a></td>
+                </tr>
+                <tr>
+                  <th scope="row">
+                    <div class="p-2">
+                      <img src="img/Voodoo.png" alt="" width="70" class="img-fluid rounded shadow-sm">
+                      <div class="ml-3 d-inline-block align-middle">
+                        <p class="mb-0"> <a href="#" class="text-dark d-inline-block">Voodoo Ranger Imperial IPA</a></p><span class="text-muted font-weight-normal font-italic">Category: IPA</span>
+                      </div>
+                    </div>
+                  </th>
+                  <td class="align-middle"><strong>$13.99</strong></td>
+                  <td class="align-middle"><strong>1</strong></td>
+                  <td class="align-middle"><a href="#" class="text-dark"><i class="fa fa-trash"></i></a></td>
+                </tr>
+                <tr>
+                  <th scope="row">
+                    <div class="p-2">
+                      <img src="img/Budweiser.jpg" alt="" width="70" class="img-fluid rounded shadow-sm">
+                      <div class="ml-3 d-inline-block align-middle">
+                        <p class="mb-0"> <a href="#" class="text-dark d-inline-block">Budweiser</a></p><span class="text-muted font-weight-normal font-italic">Category: Lager</span>
+                      </div>
+                    </div>
+                  </th>
+                  <td class="align-middle"><strong>$10.99</strong></td>
+                  <td class="align-middle"><strong>1</strong></td>
+                  <td class="align-middle"><a href="#" class="text-dark"><i class="fa fa-trash"></i></a></td>
+                </tr>
+                <tr>
+                  <th scope="row">
+                    <div class="p-2">
+                      <img src="img/SteelReserve.png" alt="" width="70" class="img-fluid rounded shadow-sm">
+                      <div class="ml-3 d-inline-block align-middle">
+                        <p class="mb-0"> <a href="#" class="text-dark d-inline-block">Steel Reserve</a></p><span class="text-muted font-weight-normal font-italic">Category: Lager</span>
+                      </div>
+                    </div>
+                  </th>
+                  <td class="align-middle"><strong>$6.99</strong></td>
+                  <td class="align-middle"><strong>3</strong></td>
+                  <td class="align-middle"><a href="#" class="text-dark"><i class="fa fa-trash"></i></a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+	        <hr>
+	        <p><b>Order Total: $171.86‬</b></p>
+	        <p><b>Tax: $15.25‬</b></p>
+	        <p><b>Bottle Deposit: $8.70</b></p>‬
+          <hr>
+	        <p><b>Total Price: $195.81‬</b></p>
+		    </div>
+		    <input class="btn btn-primary" type="submit" value="Place Order">
+		    <a class="btn btn-secondary" href="cart.html">Back to cart</a>
+	    </form>
+    </div>
+    <footer class="bg-secondary text-center text-white footer border-top">
+      Copyright 2020
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Beertopia - Shopping Cart</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	  <link rel="stylesheet" href="css/style.css">
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+	  <link href="https://fonts.googleapis.com/css2?family=Girassol&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-secondary p-3"> <a class="navbar-brand text-white" href="index.html">Beertopia&nbsp;</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1"> <span class="navbar-toggler-icon"></span> </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active"> <a class="nav-link text-white" href="index.html">Home</a> </li>
+            <li class="nav-item"> </li>
+            <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown"> Shop&nbsp; </a>
+              <div class="dropdown-menu bg-secondary text-white">
+			          <a class="dropdown-item text-white" href="catalog.html#">All Products</a> 
+		   	        <a class="dropdown-item text-white" href="catalog.html#IPA">IPA</a>
+			          <a class="dropdown-item text-white" href="catalog.html#Lagers">American Style Lagers</a>
+			          <a class="dropdown-item text-white" href="catalog.html#Stouts">Stouts</a>
+			        </div>
+            </li>
+            <li class="nav-item"> <a class="nav-link text-white" href="about.html">About Us</a> </li>
+          </ul>
+          <div class="my-2 my-lg-0">
+            <a class="btn text-white" href="#"><i class="fas fa-shopping-cart"></i></a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div>
+      <div class="table-responsive">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col" class="border-0 bg-light">
+                <div class="p-2 px-3 text-uppercase">Product</div>
+              </th>
+              <th scope="col" class="border-0 bg-light">
+                <div class="py-2 text-uppercase">Price</div>
+              </th>
+              <th scope="col" class="border-0 bg-light">
+                <div class="py-2 text-uppercase">Quantity</div>
+              </th>
+              <th scope="col" class="border-0 bg-light">
+                <div class="py-2 text-uppercase">Remove</div>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row" class="border-0">
+                <div class="p-2">
+                  <img src="img/BloodOrangeIPA.jpg" alt="" width="70" class="img-fluid rounded shadow-sm">
+                  <div class="ml-3 d-inline-block align-middle">
+                    <p class="mb-0"> <a href="#" class="text-dark d-inline-block align-middle">Flagship Brewery Blood Orange IPA</a></p><span class="text-muted font-weight-normal font-italic d-block">Category: IPA</span>
+                  </div>
+                </div>
+              </th>
+              <td class="border-0 align-middle"><strong>$103.92‬</strong></td>
+              <td class="border-0 align-middle"><strong>8</strong></td>
+              <td class="border-0 align-middle"><a href="#" class="text-dark"><i class="fa fa-trash"></i></a></td>
+            </tr>
+            <tr>
+              <th scope="row">
+                <div class="p-2">
+                  <img src="img/GooseIslandIPA.jpg" alt="" width="70" class="img-fluid rounded shadow-sm">
+                  <div class="ml-3 d-inline-block align-middle">
+                    <p class="mb-0"><a href="#" class="text-dark d-inline-block">Goose Island IPA</a></p><span class="text-muted font-weight-normal font-italic">Category: IPA</span>
+                  </div>
+                </div>
+              </th>
+              <td class="align-middle"><strong>$23.98‬</strong></td>
+              <td class="align-middle"><strong>2</strong></td>
+              <td class="align-middle"><a href="#" class="text-dark"><i class="fa fa-trash"></i></a></td>
+            </tr>
+            <tr>
+              <th scope="row">
+                <div class="p-2">
+                  <img src="img/Guinness.jpg" alt="" width="70" class="img-fluid rounded shadow-sm">
+                  <div class="ml-3 d-inline-block align-middle">
+                    <p class="mb-0"> <a href="#" class="text-dark d-inline-block">Guinness Draught</a></p><span class="text-muted font-weight-normal font-italic">Category: Stout</span>
+                  </div>
+                </div>
+              </th>
+              <td class="align-middle"><strong>$11.99</strong></td>
+              <td class="align-middle"><strong>1</strong></td>
+              <td class="align-middle"><a href="#" class="text-dark"><i class="fa fa-trash"></i></a></td>
+            </tr>
+			      <tr>
+              <th scope="row">
+                <div class="p-2">
+                  <img src="img/Voodoo.png" alt="" width="70" class="img-fluid rounded shadow-sm">
+                  <div class="ml-3 d-inline-block align-middle">
+                    <p class="mb-0"> <a href="#" class="text-dark d-inline-block">Voodoo Ranger Imperial IPA</a></p><span class="text-muted font-weight-normal font-italic">Category: IPA</span>
+                  </div>
+                </div>
+              </th>
+              <td class="align-middle"><strong>$13.99</strong></td>
+              <td class="align-middle"><strong>1</strong></td>
+              <td class="align-middle"><a href="#" class="text-dark"><i class="fa fa-trash"></i></a></td>
+            </tr>
+	          <tr>
+              <th scope="row">
+                <div class="p-2">
+                  <img src="img/Budweiser.jpg" alt="" width="70" class="img-fluid rounded shadow-sm">
+                  <div class="ml-3 d-inline-block align-middle">
+                    <p class="mb-0"> <a href="#" class="text-dark d-inline-block">Budweiser</a></p><span class="text-muted font-weight-normal font-italic">Category: Lager</span>
+                  </div>
+                </div>
+              </th>
+              <td class="align-middle"><strong>$10.99</strong></td>
+              <td class="align-middle"><strong>1</strong></td>
+              <td class="align-middle"><a href="#" class="text-dark"><i class="fa fa-trash"></i></a></td>
+            </tr>
+            <tr>
+              <th scope="row">
+                <div class="p-2">
+                  <img src="img/SteelReserve.png" alt="" width="70" class="img-fluid rounded shadow-sm">
+                  <div class="ml-3 d-inline-block align-middle">
+                    <p class="mb-0"> <a href="#" class="text-dark d-inline-block">Steel Reserve</a></p><span class="text-muted font-weight-normal font-italic">Category: Lager</span>
+                  </div>
+                </div>
+              </th>
+              <td class="align-middle"><strong>$6.99</strong></td>
+              <td class="align-middle"><strong>3</strong></td>
+              <td class="align-middle"><a href="#" class="text-dark"><i class="fa fa-trash"></i></a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+	    <hr>
+	    <p><b>Order Total: $171.86‬</b></p>
+	    <p><b>Tax: $15.25‬</b></p>
+	    <p><b>Bottle Deposit: $8.70</b></p>‬
+      <hr>
+	    <p><b>Total Price: $195.81‬</b></p>
+	  </div>
+	  <div class="justify-content-center text-center">
+	    <a class="btn btn-primary" href="checkout.html">Proceed to checkout</a>
+	  </div>
+    <footer class="bg-secondary text-center text-white footer border-top">
+      Copyright 2020
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>

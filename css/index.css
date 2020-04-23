@@ -1,0 +1,26 @@
+@media (max-width: 992px)
+{
+	.jumbotron 
+	{
+  		background: url("../img/sunset-beer.jpg") no-repeat;
+  		background-size: cover;
+	 	background-position: center center;
+  		height: auto;
+  		width:100%;
+	}
+}
+@media (min-width: 993px)
+{
+	.jumbotron 
+	{
+  		background: url("../img/sunset-beer.jpg") no-repeat;
+  		background-size: cover;
+	 	background-position: center center;
+  		height: 600px;
+  		width:100%;
+	}
+}
+.shadowtext
+{
+	text-shadow: 2px 2px #000000;
+}
